@@ -1,0 +1,32 @@
+10.0.0.17/stock-api/public/routes
+"""
+  GET|HEAD        / .................................................................................................. 
+  GET|HEAD        api/categorias ........................................ categorias.index › CategoriaController@index
+  POST            api/categorias ........................................ categorias.store › CategoriaController@store
+  GET|HEAD        api/categorias/{id} ..................................... categorias.show › CategoriaController@show
+  PUT|PATCH       api/categorias/{id} ................................. categorias.update › CategoriaController@update
+  DELETE          api/categorias/{id} ............................... categorias.destroy › CategoriaController@destroy
+  GET|HEAD        api/items ....................................................... items.index › ItemController@index
+  POST            api/items ....................................................... items.store › ItemController@store
+  GET|HEAD        api/items/{id} .................................................... items.show › ItemController@show
+  PUT|PATCH       api/items/{id} ................................................ items.update › ItemController@update
+  DELETE          api/items/{id} .............................................. items.destroy › ItemController@destroy
+  GET|HEAD        api/ordenes .................................................. ordenes.index › OrdenController@index
+  POST            api/ordenes .................................................. ordenes.store › OrdenController@store
+  GET|HEAD        api/ordenes-estado .............................. ordenes-estado.index › OrdenEstadoController@index
+  POST            api/ordenes-estado .............................. ordenes-estado.store › OrdenEstadoController@store
+  GET|HEAD        api/ordenes-estado/{id} ........................... ordenes-estado.show › OrdenEstadoController@show
+  PUT|PATCH       api/ordenes-estado/{id} ....................... ordenes-estado.update › OrdenEstadoController@update
+  DELETE          api/ordenes-estado/{id} ..................... ordenes-estado.destroy › OrdenEstadoController@destroy
+  GET|HEAD        api/ordenes/{id} ............................................... ordenes.show › OrdenController@show
+  PUT|PATCH       api/ordenes/{id} ........................................... ordenes.update › OrdenController@update
+  DELETE          api/ordenes/{id} ......................................... ordenes.destroy › OrdenController@destroy
+  GET|HEAD        api/subcategorias ............................... subcategorias.index › SubcategoriaController@index
+  POST            api/subcategorias ............................... subcategorias.store › SubcategoriaController@store
+  GET|HEAD        api/subcategorias/{id} ............................ subcategorias.show › SubcategoriaController@show
+  PUT|PATCH       api/subcategorias/{id} ........................ subcategorias.update › SubcategoriaController@update
+  DELETE          api/subcategorias/{id} ...................... subcategorias.destroy › SubcategoriaController@destroy
+  GET|HEAD        api/user ...........................................................................................
+  GET|HEAD        routes ............................................................................ RoutesController
+                                                                                                   Showing [28] routes
+""" // app\Http\Controllers\RoutesController.php:30

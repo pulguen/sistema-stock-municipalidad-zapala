@@ -1,0 +1,22 @@
+.table-responsive {
+    overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}
+
+.table-adaptable {
+    width: 100%; /* Asegura que la tabla use todo el ancho disponible */
+    table-layout: auto; /* Deja que las columnas se ajusten automáticamente */
+    word-wrap: break-word; /* Ajusta el contenido de las celdas */
+}
+
+.table-adaptable th, .table-adaptable td {
+    white-space: nowrap; /* Evita el quiebre de líneas en pantallas pequeñas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+}
+
+@media (max-width: 768px) {
+    .table-adaptable th, .table-adaptable td {
+        white-space: normal; /* Permite que el texto se ajuste en líneas múltiples en pantallas pequeñas */
+    }
+}

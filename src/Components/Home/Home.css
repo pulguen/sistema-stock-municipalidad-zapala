@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-column: span 2;
+  background-color: #3d90e4;
+  padding: 15px 15px 10px 8px;
+  
+}
+
+.titulo-slidebar{
+  font-size: 1.2em;
+}
+
+.sidebar .nav-link {
+  color: var(--dark-color) !important; /* Cambia el color de los enlaces a negro */
+  font-size: 1 em;
+  font-weight: 500;
+  padding: 10px 15px; /* Añade algo de padding para mejorar la usabilidad */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+.sidebar .nav-link:hover {
+  background-color: var(--ligth-color);
+  color: #333 !important; /* Cambia el color al pasar el mouse por encima */
+}
+
+.sidebar .nav-link:active {
+  background-color: #c0c0c0; /* Color de fondo al hacer clic */
+  color: #1E2F58; /* Color del texto al hacer clic */
+}
+
+.bottons-home{
+  display: flex;  
+}
+
+.main-content {
+  grid-column: span 10;
+  background-color: var(--ligth-color);
+  padding: 15px;
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    grid-column: span 12;
+
+  }
+
+  .main-content {
+    grid-column: span 12;
+  }
+}
+
+
